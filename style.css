@@ -1,0 +1,84 @@
+:root {
+    font-family: sans-serif;
+}
+
+body {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+}
+
+table {
+    font-size: 2rem;
+    text-align: left;
+}
+
+td, th {
+    padding: 0.2rem 1rem;
+    border: 1px solid black;
+}
+
+table button {
+    width: 10rem;
+    padding: 1rem 1rem 1rem 1rem;
+    font-size: 1rem;
+}
+
+button {
+    margin: 1rem;
+    padding: 2rem 5rem;
+    font-family: "Consolas";
+    font-size: 2rem;
+    border-radius: 1rem;
+    border: 1px dashed grey;
+    background-color: aliceblue;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+.modal {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 100%; 
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    width: 20rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: cyan;
+    padding: 2rem;
+    border-radius: 0.5rem;
+}
+
+.modal-content > div {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+form {
+    display: grid;
+    grid-template-columns: auto;
+}
+
+input {
+    margin-bottom: 0.5rem;
+    padding: 0.3rem;
+    border-radius: 0.5rem;
+}
+
+#submit {
+    transform: scale(0.7);
+}
